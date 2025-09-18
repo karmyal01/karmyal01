@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Karmyal01</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background-color: #fff;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 60px 30px;
+      }
+
+      .header-container {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 30px;
+      }
+
+      .profile-pic-container {
+        width: 80px;
+        height: 80px;
+        border-radius: 12px;
+        position: relative;
+        overflow: hidden;
+        flex-shrink: 0;
+        background: linear-gradient(45deg, #2d5a3d, #4a7c59);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .profile-pic-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 12px;
+      }
+
+      .profile-pic-container .placeholder {
+        color: white;
+        font-size: 12px;
+        font-weight: 500;
+        text-align: center;
+        font-family: Arial, sans-serif;
+      }
+
+      h1 {
+        font-size: 2.5em;
+        font-weight: 400;
+        margin: 0;
+        letter-spacing: -0.02em;
+      }
+
+      h2 {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 20px;
+      }
+
+      p {
+        margin-bottom: 20px;
+        font-size: 16px;
+        line-height: 1.7;
+      }
+
+      a {
+        color: #333;
+        text-decoration: underline;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 3px;
+        transition: color 0.2s ease;
+      }
+
+      a:hover {
+        color: #666;
+      }
+
+      .content {
+        margin-bottom: 40px;
+      }
+
+      .recommendations {
+        margin-bottom: 35px;
+      }
+
+      .recommendation-item {
+        display: flex;
+        margin-bottom: 12px;
+        gap: 10px;
+      }
+
+      .recommendation-label {
+        font-weight: 500;
+        flex-shrink: 0;
+        min-width: 160px;
+      }
+
+      .quote {
+        font-style: italic;
+        margin-bottom: 35px;
+        padding: 20px 0;
+        border-top: 1px solid #eee;
+        border-bottom: 1px solid #eee;
+      }
+
+      .quote-attribution {
+        font-weight: 500;
+        margin-top: 10px;
+      }
+
+      .closing {
+        font-weight: 500;
+      }
+
+      @media (max-width: 768px) {
+        body {
+          padding: 40px 20px;
+        }
+
+        h1 {
+          font-size: 2em;
+        }
+
+        .recommendation-item {
+          flex-direction: column;
+          gap: 5px;
+        }
+
+        .recommendation-label {
+          min-width: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="profile-pic-container">
+          <img
+            src="profile.jpg"
+            alt="Tarun Karmyal"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
+          />
+          <div class="placeholder" style="display: none">Photo</div>
+        </div>
+        <h1>karmyal01</h1>
+      </div>
+    </header>
+
+    <main>
+      <div class="content">
+        <p>
+          Hello. I am a Quantitative Finance and Risk Management Science Student
+          at The Chinese University of Hong Kong. Beyond my academic focus, I
+          have equal fascination towards art, philosophy, literature, design,
+          technology, music, film, and psychology.
+        </p>
+
+        <p>
+          My professional life includes business development consultancy,
+          content production, modeling,
+          <a href="https://www.instagram.com/illneverseeheaven/">photography</a
+          >, and filmmaking. I also work with sound. I create music with a
+          <a href="https://www.instagram.com/donnywokman/">friend</a>. We are
+          called
+          <a href="https://www.instagram.com/pleasedontslouch/">slouch</a>.
+        </p>
+
+        <p>
+          Here's my
+          <a href="https://www.instagram.com/afsunmoosa/">instagram</a>, and
+          <a href="mailto:moosakalimullah6@gmail.com">email</a>.
+        </p>
+
+        <p>
+          Some takes on life: time is not rigid, rest till you feel guilty and
+          then rest a bit more, sunscreen always works, stretch, electrolytes
+          are essential while fasting, pain ≠ great art, great art = repetition,
+          be kind, be observant.
+        </p>
+
+        <p>
+          Only goal for the year: consume less media, music, and clothing.
+          especially clothing.
+        </p>
+      </div>
+
+      <div class="recommendations">
+        <h2>Monthly Suggestions:</h2>
+        <div class="recommendation-item">
+          <span class="recommendation-label">Article you should read:</span>
+          <a
+            href="https://thecreativeindependent.com/people/bjork-on-nature-and-technology/"
+            >Björk on nature and technology</a
+          >
+        </div>
+        <div class="recommendation-item">
+          <span class="recommendation-label">Video you should watch:</span>
+          <a href="https://www.youtube.com/watch?v=L2EO3aXTWwg&list=LL&index=4"
+            >Patti Smith Interview | Advice to the Young</a
+          >
+        </div>
+        <div class="recommendation-item">
+          <span class="recommendation-label">Album you should listen to:</span>
+          <a
+            href="https://youtube.com/playlist?list=PLMGNv-MPQX8OC7FostT2bFz1fxlipzdMB&si=ChM_8s6QJiJkM79R"
+            >Groovy Indian Summer</a
+          >
+        </div>
+        <div class="recommendation-item">
+          <span class="recommendation-label">Book you should read:</span>
+          <a
+            href="https://www.amazon.com/Disappearance-Rituals-Topology-Present/dp/1509542760"
+            >The Disappearance of Rituals</a
+          >
+        </div>
+        <div class="recommendation-item">
+          <span class="recommendation-label">Movie You Should Watch:</span>
+          <a href="https://letterboxd.com/film/omkara/">Omkara</a>
+        </div>
+      </div>
+
+      <div class="quote">
+        <p>Anyway, here's a quote I love:</p>
+        <p>
+          "I also am other than what I imagine myself to be. To know this is
+          forgiveness."
+        </p>
+        <div class="quote-attribution">— Simone Weil</div>
+      </div>
+
+      <div class="closing">
+        <p>
+          That is all for now. I'll add more stuff with time. Also, hit me up on
+          instagram if you want to lose to me at chess. Cache you later.
+        </p>
+      </div>
+    </main>
+  </body>
+</html>
